@@ -11,6 +11,7 @@
         }
         50% {
           transform: translate(300px, 0);
+          background-color: red;
         }
         100% {
           transform: translate(400px, 500px);
@@ -24,7 +25,10 @@
         height: 100px;
         background: #fff000;
         border: 2px solid #000;
-        animation: sample-ani 2s 3;
+        animation: sample-ani 3s linear forwards;
+      }
+      .box:hover {
+        animation-play-state: paused;
       }
     </style>
   </head>
